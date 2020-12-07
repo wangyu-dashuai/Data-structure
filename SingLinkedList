@@ -100,13 +100,13 @@ void listPushBack(list* lst, LDataType val)
 //	}
 //	//删除节点
 //	free(tail);
-//	//修改指向
-//	if (prev == NULL) //删除的为头节点，更新头节点
-//		lst->_head == NULL; //只有一个头节点
-//	else
-//		prev->_next == NULL;
-//}
+//	//修改指向)
 
+//删除cur节点的下一个节点
+void listEraseAfter(listNode* cur)
+{
+	//cur next next->next
+}
 int main()
 {
 	
