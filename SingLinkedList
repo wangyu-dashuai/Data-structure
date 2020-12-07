@@ -106,6 +106,22 @@ void listPushBack(list* lst, LDataType val)
 void listEraseAfter(listNode* cur)
 {
 	//cur next next->next
+	struct listNode* next = cur->_next;
+	if(next == NULL)
+		return;
+	struct listNode* nextnext = next->_next;
+	free(next);
+	cur->_next = nextnext;
+}
+
+//在任意位置插入一个节点
+void listInsertAfter(listNode* cur,LDataType val)
+{
+	listNode* node = creatNode(val);
+	listNode* next = cur->_next;
+	//cur node next
+	cur->_next = node;
+	node->_next = next;
 }
 int main()
 {
