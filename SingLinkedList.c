@@ -123,9 +123,13 @@ void listInsertAfter(listNode* cur,LDataType val)
 	cur->_next = node;
 	node->_next = next;
 }
+void test()
+{
+
+}
 int main()
 {
-	
+	test();
 	system("pause");
 	return 0;
 }
