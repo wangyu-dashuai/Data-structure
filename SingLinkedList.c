@@ -125,7 +125,13 @@ void listInsertAfter(listNode* cur,LDataType val)
 }
 void test()
 {
-
+	list lst;
+	liastInit(&lst);
+	listPushFront(&lst,5);
+	listPushFront(&lst,4);
+	listPushFront(&lst,3);
+	listPushFront(&lst,2);
+	listPushFront(&lst,1);
 }
 int main()
 {
