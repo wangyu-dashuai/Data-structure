@@ -133,7 +133,7 @@ void test()
 	listPushFront(&lst,2);
 	listPushFront(&lst,1);
         listNode* cur = listFind(&lst,3);
-	
+	listNode* cur = listFind(&lst,4);
 }
 int main()
 {
